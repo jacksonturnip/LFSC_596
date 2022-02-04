@@ -3,7 +3,7 @@ title: "Managing Data and Creating a Graph in Tidyverse"
 author: "Jackson Turner"
 date: "2/4/2022"
 output: 
-  html_document
+  github_document
 ---
 
 This R markdown file provides a brief tutorial on how to visualize some data using tidyverse. 
