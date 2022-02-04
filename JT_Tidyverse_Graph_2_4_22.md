@@ -6,11 +6,11 @@ Jackson Turner
 This R markdown file provides a brief tutorial on how to visualize some
 data using tidyverse.
 
-For this exercise, we’ll be using data from a project I contributed to
-in 2018 to create a preliminary figure demonstrating how soil microbial
-communities of several sites near and within the Great Smoky Mountains
-National Park respond along a wildfire burn gradient (high, medium, and
-none) and human development (natural v. urban).
+For this exercise, we’ll be using data from Kivlin et al. (2020) to
+create a preliminary figure demonstrating how soil microbial communities
+of several sites near and within the Great Smoky Mountains National Park
+respond along a wildfire burn gradient (high, medium, and none) and
+human development (natural v. urban).
 
 ## Loading in tidyverse and our data
 
@@ -33,7 +33,7 @@ our analysis.
 We’ll also go ahead and load in our data and save it as a data frame.
 
 ``` r
-smokies_dat<-read.csv("Smokies_2019_ENV.csv")
+smokies_dat<-read.csv("Smokies_ENV.csv")
 ```
 
 Let’s use tidyverse to get a sneak peek at our data frame. It’s worth
@@ -124,8 +124,8 @@ data.
   filter(PlantSpecies!="VIOL"))
 ```
 
-Now that we’ve compensated for our mistake, let’s go ahead and remove
-any empty or duplicated rows of data.
+Now that we’ve fixed this mistake, let’s go ahead and remove any empty
+or duplicated rows of data.
 
 ``` r
 smokies_dat %>%
@@ -144,10 +144,10 @@ smokies_dat_subset<- smokies_dat %>%
   select(UN,Burn.Status,Shannon)
 ```
 
-Now that we’ve checked and subset our data, we’re ready to visualise our
+Now that we’ve checked and subset our data, we’re ready to visualize our
 relevant data\!
 
-## Visualising our data
+## visualizing our data
 
 The `ggplot2` package within `tidyverse` allows us to plot our data in
 any way of our choosing. For this particular graph, we’d like to use a
@@ -171,7 +171,7 @@ ggplot(smokies_dat_subset,aes(x=UN,y=Shannon,fill=Burn.Status)) +
         legend.text=element_text(size=20))
 ```
 
-![](JT_Tidyverse_Graph_2_4_22_files/figure-gfm/pressure-1.png)<!-- -->
+![](JT_Tidyverse_Graph_2_4_22_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 From this exploratory graph we can infer that natural, unburned sites in
 this system are somewhat more diverse than those of urban sites or those
@@ -182,3 +182,13 @@ question.
 
 This concludes the tutorial – I hope it was helpful and I wish you the
 best in your journey creating graphs\!
+
+References:
+
+  - Stephanie N. Kivlin, V. Rosanne Harpe, Jackson H. Turner, Jessica A.
+    M. Moore, Leigh C. Moorhead, Kendall K. Beals, Mali M. Hubert,
+    Monica Papeş, Jennifer A. Schweitzer; Arbuscular mycorrhizal fungal
+    response to fire and urbanization in the Great Smoky Mountains
+    National Park. Elementa: Science of the Anthropocene 21 January
+    2021; 9 (1): 00037. doi:
+    <https://doi.org/10.1525/elementa.2021.00037>
