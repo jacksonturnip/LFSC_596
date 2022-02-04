@@ -176,7 +176,7 @@ ggplot(smokies_dat_subset,aes(x=UN,y=Shannon,fill=Burn.Status)) + # reference ou
 
 ![](JT_Tidyverse_Graph_2_4_22_files/figure-gfm/pressure-1.png)<!-- -->
 
-If the graph does not load, refer to the \`unnamed-chunk-8-1.png’ file
+If the graph does not load, refer to the `unnamed-chunk-8-1.png` file
 uploaded to this folder for the associated image.
 
 From this exploratory graph we can infer that natural, unburned sites in
@@ -189,9 +189,12 @@ question.
 This concludes the tutorial – I hope it was helpful and I wish you the
 best in your journey creating graphs\!
 
-References \*Stephanie N. Kivlin, V. Rosanne Harpe, Jackson H. Turner,
-Jessica A. M. Moore, Leigh C. Moorhead, Kendall K. Beals, Mali M.
-Hubert, Monica Papeş, Jennifer A. Schweitzer; Arbuscular mycorrhizal
-fungal response to fire and urbanization in the Great Smoky Mountains
-National Park. Elementa: Science of the Anthropocene 21 January 2021; 9
-(1): 00037. doi: <https://doi.org/10.1525/elementa.2021.00037>
+References
+
+  - Stephanie N. Kivlin, V. Rosanne Harpe, Jackson H. Turner, Jessica A.
+    M. Moore, Leigh C. Moorhead, Kendall K. Beals, Mali M. Hubert,
+    Monica Papeş, Jennifer A. Schweitzer; Arbuscular mycorrhizal fungal
+    response to fire and urbanization in the Great Smoky Mountains
+    National Park. Elementa: Science of the Anthropocene 21 January
+    2021; 9 (1): 00037. doi:
+    <https://doi.org/10.1525/elementa.2021.00037>
